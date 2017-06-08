@@ -7,10 +7,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 
 <body>
-<%= link_to "home", cocktails_path %>
+
+
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <i class="fa fa-glass" aria-hidden="true"></i>
+  </a>
+
+    <%= link_to "Home", cocktails_path %>
+  </div>
+
+
+</div>
+
+
+
+
   <%= yield %>
 </body>
 </html>
