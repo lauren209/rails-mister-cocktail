@@ -18,13 +18,16 @@
 .container{
   text-align: center;
 }
-
+body{
+  background-image: url("https://t4.ftcdn.net/jpg/01/14/25/15/240_F_114251594_EDkfaF01kG3OrXAT18iljPmflVHMDMqI.jpg");
+  background-size: cover;
+}
 .btn{
   border-radius: 4px;
 }
 a{
-  color: $red;
+  color: black;
 }
 a:hover{
-  color: red;
+  color: black;
 }
