@@ -6,12 +6,12 @@
 <% @cocktail.doses.each do |d| %>
 <%= d.description %>
 <p style="display: inline-block;">-------------------</p>
-<%= Ingredient.all.find(d.ingredient_id).name %>
+<%= d.ingredient.name %>
 
 <%= link_to "remove dose", dose_path(d), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
 <br>
 <% end %>
-
+<%= render 'shared/dose_form' %>
 
 <%= link_to "new dose", new_cocktail_dose_path(@cocktail.id) %>
 </div>
